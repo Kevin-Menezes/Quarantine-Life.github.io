@@ -1,0 +1,320 @@
+
+/*--------------------------------------IMPORTING FONTS FROM GOOGLE FONTS------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');  /*ROBOTO SLAB*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Turret+Road&display=swap');  /*TURRET ROAD*/
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap'); /*Itim*/
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap'); /*SPecial Elite*/
+
+/*------------------------------------RESETTING THE SPACE AREA------------------------------*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+
+
+
+/*-----------------------------------------HEADER-------------------------------------------*/
+
+.container1{                /*MAIN CONTAINER*/
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-top: 0.8%;
+    
+
+
+}
+
+.container1 .header{        	  /*QUARANTINE LIFE CONTAINER*/
+    padding: 0px;
+    height: 100%;  
+    margin: 10px;
+    animation: slideInFromLeft 1s ease-in;
+    
+    
+}
+
+
+.container1 .home,.cool,.survey{        /*3 CONTAINERS*/
+    padding-left: 20px;
+    animation: slideInFromRight 1s ease-in;
+    
+}
+
+.header{
+	margin: auto;
+
+}
+
+.header h1{               /* QUARANTINE LIFE */
+	padding-left: 0px;
+    font-size: 70px;
+    font-family: "Roboto Slab", "sans-serif";
+    
+    
+}
+
+
+
+
+.home{
+	margin: auto;
+}
+
+.home h2{                    /* HOME */
+    padding-top: 22px;
+    font-family: "Turret Road", "cursive";
+    font-size: 38px;
+
+    
+}
+
+.cool{
+	margin: auto;
+}
+
+.cool h2{                /*COOL STUFF*/
+    padding-top: 25px;
+    font-family: 'Turret Road', cursive;
+    font-size: 35px;
+    
+}
+
+.survey{
+	margin: auto;
+}
+
+.survey h2{                  /*SURVEY*/
+    padding-top: 25px;
+    font-family: 'Turret Road', cursive;
+    font-size: 35px;
+}
+
+a{                                 /* a href to remove underline */
+    text-decoration: none;
+    color: black;
+    margin: 0 5px;
+}
+
+a:hover{                                /*hover over hyperlink*/
+    border-bottom: 2px black solid;
+    
+}
+
+/*-----------------------------------------END OF HEADER---------------------------------------*/
+
+/*-------------------------------------------BODY----------------------------------------------*/
+
+body{
+    background-image: url("QUARANTINE.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;    
+}
+
+.left{                                  /*left words*/
+    padding: 60px 40px 40px 40px;
+    width: 700px;
+    text-align: center;
+    margin-left: 0.8%;
+    font-size: 14px;
+    font-family: "Itim",cursive;
+    color: white;
+}
+   
+
+.d1{
+    animation: netflix_style 2s;
+}
+
+.d2{
+
+    animation: netflix_style 3s;
+
+}
+
+.d3{
+    animation: netflix_style 4s;
+}
+
+
+.bottom{                /*bottom word*/
+    width: 700px;
+    text-align: center;
+    margin-left: 0.8%;
+   font-size: 22px;
+   text-shadow:5px 5px 10px lightseagreen;
+
+   font-family: 'Special Elite', cursive;
+}
+
+
+.button{            /*button class*/
+    width: 700px;
+    margin-left: 0.8%;
+    text-align: center;
+    
+}
+    
+
+
+button{                         /*button*/
+    padding: 1% 3% 1% 3%;
+    font-size: 30px;
+    width: 70%; 
+    margin-top: 0.5%;
+    
+   
+
+    border:none;
+    border-radius: 15px;
+    font-family: "Itim", "sans-serif";
+
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 255, 0.634),
+    0 2.7px 5.3px rgba(0, 0, 255, 0.648),
+    0 2.5px 10px rgba(0, 0, 255, 0.06),
+    0 12.3px 17.9px rgba(0, 0, 255, 0.072),
+    0 21.8px 33.4px rgba(0, 0, 255, 0.486),
+    0 10px 80px rgba(0, 0, 255, 0.412);
+
+    transition: transform 0.2s ease-in;
+
+
+
+background: linear-gradient(-45deg, #ffa63d,#fcb045, #fd1d1d, #ff3d77 , #833ab4, #338aff );
+  background-size: 600%;
+  -webkit-animation: anime 12s linear infinite;
+          animation: anime 12s linear infinite;
+}
+
+
+@-webkit-keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+
+
+
+
+button:hover{                   /* hover over button*/
+    transform:translatey(10px);
+    box-shadow: none;
+}
+
+.container2{        /*horizontal container*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+/* -------------------------------------ANIMATIONS-------------------------------------- */
+
+@keyframes slideInFromLeft{                 /*ANIMATION FROM LEFT TO RIGHT*/
+    0%{
+        transform : translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight{            /*ANIMATION FROM RIGHT TO LEFT*/
+    0%{
+        transform : translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight{            
+    0%{
+        transform : translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight{
+    0%{
+        transform : translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop{              /*ANIMATION FROM TOP TO BOTTOM*/
+    0%{
+        transform : translateY(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom{           /*ANIMATION FROM BOTTOM TO TOP*/
+    0%{
+        transform : translateY(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/* --------------------------------------------------------------------------------------HEADER ANIMATION------------------------------------------------------------------------------- */
+
+@keyframes netflix_style {
+
+    0%{
+        color: transparent;
+    }
+
+    100% {
+      opacity: 0;
+      color: transparent;
+    }
+  }
+  

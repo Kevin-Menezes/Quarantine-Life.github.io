@@ -1,0 +1,115 @@
+/*--------------------------------------IMPORTING FONTS FROM GOOGLE FONTS------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');  /*ROBOTO SLAB*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Turret+Road&display=swap');  /*TURRET ROAD*/
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap'); /*Itim*/
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap'); /*SPecial Elite*/
+
+/*------------------------------------RESETTING THE SPACE AREA------------------------------*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+/* ----------------------------------------------------------------------------------------------HEADER---------------------------------------------------------------------------------------------------- */
+
+h3{
+    text-align: center;
+    font-size: 40px;
+    font-family:  "Roboto Slab", "sans-serif";
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.formcontainer{
+    margin-top: 1%;
+    margin-bottom: 2%;
+
+}
+
+.formcontainer div{
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+
+.b1,.b2,.b3,.b4,.b5,.b6{
+    border-bottom: 1px black solid;
+}
+
+
+form{
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin: 0 auto;
+    width: 1200px;
+    
+    padding: 1em;
+    
+    border-radius: 50px;
+    
+    background-image: url("BLUE.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;   
+ 
+    font-size: 25px;
+    font-family:  "Itim", "sans-serif";
+
+    box-shadow:
+    0 2.8px 2.2px rgba(75, 165, 189, 0.834),
+    0 6.7px 5.3px rgba(75, 165, 189, 0.848),
+    0 12.5px 10px rgba(75, 165, 189, 0.06),
+    0 22.3px 17.9px rgba(75, 165, 189, 0.072),
+    0 41.8px 33.4px rgba(75, 165, 189, 0.886),
+    0 100px 80px rgba(75, 165, 189, 0.812);
+    
+    }
+
+body{
+    background-image: url("WHITE.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;   
+    margin-bottom: 3%;
+ 
+}
+
+textarea{
+    background-color: transparent;
+    font-size: 25px;
+}
+
+button{
+    font-size: 20px;
+    font-family: "Roboto slab", "sans-serif" ;
+    padding: 1% 3% 1% 3%;
+    border-radius: 30px;
+    margin-left: 43%;
+    margin-top: 2%;
+    background-color: white;
+    border: 1px rgb(79, 193, 206) solid;
+
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.87);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
+}   
+
+button:hover {
+    
+    border-color: black;
+    background: none;
+    box-shadow: none;
+    transform:translatey(10px);
+    }
+

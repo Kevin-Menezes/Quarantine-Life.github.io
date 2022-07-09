@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUARANTINE SURVEY</title>
+
+
+	<link rel="stylesheet" type="text/css" href="SURVEYFORM.css">
+
+ 
+<script type="text/javascript">
+
+//function for form validation to go to the survey page
+
+function validateForm()
+{
+	alert("CLICK TO GO TO SURVEY");
+	return true;
+}
+
+	
+
+
+//function for checking name
+
+function checkname() 
+{
+	var Name = document.getElementById("name").value;
+
+	if( Name == "")
+	{
+		document.getElementById("message1").innerHTML="  Please enter your name!";
+		return false;
+	}
+	else
+	{
+		document.getElementById("message1").innerHTML=" ";
+	}
+}
+
+
+
+//function for checking age
+
+function checkage() 
+{
+
+	var Age = document.getElementById("age").value;
+	
+	if( Age =="")
+	{
+		document.getElementById("message2").innerHTML="  Please enter your age!";
+		return false;
+	}
+
+	else
+	{
+
+		document.getElementById("message2").innerHTML=" ";
+	}
+
+
+	if( Age<0)
+	{
+		document.getElementById("message2").innerHTML=" Your too young to be living;) Please enter correct age! ";
+		return false;
+	}
+	
+	if( Age>100 )
+	{
+		document.getElementById("message2").innerHTML=" Your too old to be living;) Please enter correct age! ";
+		return false;
+	}
+	
+	
+}
+
+
+//function for checking valid mobile number
+
+function checknumber()
+{
+
+	var phno = document.getElementById("num").value;
+
+	
+
+	if( phno.length <10)
+	{
+			document.getElementById("message3").innerHTML="   Too Short!";
+
+
+	}
+ 	
+ 	else
+	{
+				document.getElementById("message3").innerHTML="   Too Long!";
+
+	}
+
+	if( phno.length==10)
+	{
+			document.getElementById("message3").innerHTML=" ";
+
+	}
+}
+
+
+	
+//function to check email
+
+function checkemail()
+{
+
+	var ema = document.getElementById("email").value;
+
+
+	if(ema=="")
+	{
+		document.getElementById("message4").innerHTML="   Please enter your email!";
+		return false;
+	}
+	else
+	{
+		document.getElementById("message4").innerHTML=" ";
+	}
+}
+		
+	
+</script>
+
+
+</head>
+
+
+<body>
+
+
+<div class="maincontainer">
+
+<div class="header">
+<h1>AN EXPERIENCE THROUGH QUARANTINE</h1></div>
+
+<!-- <img src=https://images.indianexpress.com/2020/03/online-1.jpg alt="Quarantine life image"> -->
+
+<div class="flex">
+
+<div class="description">
+
+<div class="head1">
+<h2>This is a survey to get to know about how these months in quarantine have affected people's lives.</h2><br></div>
+
+<div class="head2">
+<h4>This survey is taken to get info on how people from all over the world have spent their days in quarantine.</h4></div></div>
+
+
+<!-- Form for entering users info -->
+
+
+<form action="MAINSURVEY.html" target="_blank" onsubmit="return validateForm();">
+
+<div class="mainform">
+
+	
+		<div class="NAME">
+		NAME:<br>
+		<input type="text" id="name" onblur="checkname();" required pattern="^[a-zA-Z].*[\s\.]*$" title="ENTER YOUR NAME"><span id="message1"></span></div><br>
+
+		<div id="AGE">
+		AGE:<br>
+		<input type="number" id="age" onblur="checkage();" required  title="ENTER YOUR AGE"  pattern="^(0?[1-9]|[1-9][0-9]|[1][1-9][1-9]|105)$" ><span id="message2"></span></div><br>
+
+		<div class="continent">
+		CONTINENT:<br>
+		<select id="cont" name="continent">
+		<option value="ASIA">ASIA</option>
+		<option value="AFRICA">AFRICA</option>
+		<option value="EUROPE">EUROPE</option>
+		<option value="NORTH AMERICA">NORTH AMERICA</option>
+		<option value="SOUTH AMERICA">SOUTH AMERICA</option>
+		<option value="AUSTRALIA">AUSTRALIA</option>
+		<option value="ANTARCTICA">ANTARCTICA</option></select></div><br>
+
+
+		<div id="NUM">
+		MOBILE NUMBER:<br>
+		<input type="number" id="num" onblur="checknumber();" pattern="[0-9]{10}" title="ENTER YOUR MOBILE NUMBER"><span id="message3"></span>  </div><br>
+
+
+		<div id="EMAILID">
+		EMAIL:<br>
+		<input type="email" id="email" onblur="checkemail();" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" title="ENTER VALID EMAIL ADDRESS"><span id="message4"></span></div><br>
+
+		<div id="link">
+		<button onclick="InfoDone();" >SUBMIT TO GO TO SURVEY</button></div>
+
+	
+
+</div></form>
+
+<img src="STUFF2.png" alt="QUARANTINE ACTIVITIES">
+
+
+
+</div></div>
+
+
+
+
+</body>
+</html>
