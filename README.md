@@ -12,3 +12,4 @@ This website is hosted on GitHub. Kindly click on the link : https://kevin-menez
 
 # ▶Project video
 This video will show you the working of the website and will guide you on how to use it.
+<img alt="Cool Stuffs" src="https://github.com/Kevin-Menezes/Quarantine-Life.github.io/blob/main/Stuff.png">
