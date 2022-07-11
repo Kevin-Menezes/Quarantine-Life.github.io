@@ -116,7 +116,7 @@ a:hover{                                /*hover over hyperlink*/
 /*-------------------------------------------BODY----------------------------------------------*/
 
 body{
-    background-image: url("QUARANTINE.jpg");
+    background-image: url("/images/QUARANTINE.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -224,15 +224,10 @@ background: linear-gradient(-45deg, #ffa63d,#fcb045, #fd1d1d, #ff3d77 , #833ab4,
 }
 
 
-
-
-
-
-
-
 button:hover{                   /* hover over button*/
     transform:translatey(10px);
     box-shadow: none;
+    cursor: pointer;
 }
 
 .container2{        /*horizontal container*/

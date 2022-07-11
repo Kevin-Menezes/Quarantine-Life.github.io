@@ -20,22 +20,22 @@
 /* ---------------------------------------------------------------------HEADING------------------------------------------------------------------------- */
 
 
-.maincontainer{
-    borde: 1px black solid;
+/* .maincontainer{
+    border: 1px black solid;
     
 }
 
 .maincontainer div{
-    borde: 1px black solid;
+    border: 1px black solid;
 }
 
 
 .header{
-    borde: 1px black solid;
+    border: 1px black solid;
     margin-top: 2%;
     background-color: rgb(75, 165, 189);
     
-}
+} */
 
 .header h1{
     font-size: 60px;
@@ -92,7 +92,7 @@ h4{
     font-size: 20px;
     border-radius: 5%;
     font-family: "Roboto Slab", "sans-serif" ;
-    background-image: url("WHITE.jpg");
+    background-image: url("/images/WHITE.jpg");
     background-repeat:no-repeat ;
 
 
@@ -192,7 +192,7 @@ img{
 }
 
 body{
-    background-image: url("BLUE.jpg");
+    background-image: url("/images/BLUE.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
