@@ -56,7 +56,7 @@ form{
     
     border-radius: 50px;
     
-    background-image: url("/BLUE.jpg");
+    background-image: url("./images/BLUE.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -76,7 +76,7 @@ form{
     }
 
 body{
-    background-image: url("/images/WHITE.jpg");
+    background-image: url("./images/WHITE.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
