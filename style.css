@@ -116,7 +116,7 @@ a:hover{                                /*hover over hyperlink*/
 /*-------------------------------------------BODY----------------------------------------------*/
 
 body{
-    background-image: url("/images/QUARANTINE.jpg");
+    background-image: url("./images/QUARANTINE.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
