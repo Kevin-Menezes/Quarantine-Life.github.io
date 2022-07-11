@@ -192,7 +192,7 @@ img{
 }
 
 body{
-    background-image: url("/images/BLUE.jpg");
+    background-image: url("./images/BLUE.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
