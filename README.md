@@ -13,3 +13,36 @@ This website is hosted on GitHub. Kindly click on the link : https://kevin-menez
 # ▶Project video
 This video will show you the working of the website and will guide you on how to use it.
 <img alt="Cool Stuffs" src="https://github.com/Kevin-Menezes/Quarantine-Life.github.io/blob/main/Stuff.png">
+
+
+<br/>
+<hr>
+
+# 📄Project Description
+### Q. What is the purpose of this website?
+- This website provides quick access to different activities that people can do during their days in quarantine.
+- It also has a survey at the end to get to know what people did during their quarantine days.
+#
+
+### Q. How will users benefit from this website?
+- People who do not know how to spend time during quarantine can refer this website and choose to start something of their interest.
+#
+
+### Q. What technologies are used to build this website?
+- Frontend - Html, Css, JavaScript
+
+<br/>
+<hr>
+
+# ❓How to install and run this project
+- Download the project files on your PC/Laptop.
+- Click on the index.html to run the website.
+- Now you can follow the video and navigate through the project.
+
+<br/>
+<hr>
+
+# ✔References
+* [Youtube](https://www.youtube.com/)
+* [Google](https://www.google.com/)
+* [W3Schools](https://www.w3schools.com/)
